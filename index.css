@@ -1,0 +1,72 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container-fluid{
+    width: 100%;
+}
+.container{
+    width: 100%;
+    max-width: 95%;
+    margin: 0 auto;
+        
+    }
+.container-fluid .container .row{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.container-fluid .container .row .col-lg-1{
+    width: 50%;
+    margin: 0 auto;
+}
+.container-fluid .container .row .col-lg-2{
+    width: 50%;
+    margin:  auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-fluid .container .row .col-lg-2 .ph1{
+    text-align: center;
+     
+}
+.container-fluid h1{
+    text-align: center;
+    color: green;
+}
+.container-fluid .container .row .col-lg-1 input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.container-fluid .container .row .col-lg-1 form button{
+    width: 100%;
+    padding: 10px;
+    color: green;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.container-fluid .container .col-lg-1 #add #tarea{
+    width: 100%;
+    padding: 10px;
+  
+}
+.container-fluid .container .row .col-lg-2 .cards{
+    padding: 0px auto;
+    min-width: 100px;
+    min-height: 200px;
+    border-radius: 1rem;
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+}
+
+.container-fluid .container .row .col-lg-1 form #update{
+    display: none;
+}
