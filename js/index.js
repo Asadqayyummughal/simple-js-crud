@@ -122,13 +122,21 @@
     }
     //delfunction
     function delfunc(par) {
-      pid = par;
-      id = event.target.parentElement.getAttribute('id')
+      if(confirm('Are you wanted to delete the product'))
+      {
+        pid = par;
       console.log('checking parent element id here:', pid);
       document.getElementById(pid).remove();
       let productsData = JSON.parse(localStorage.getItem('productsData'));
       productsData.splice(pid, 1);
       localStorage.setItem('productsData', JSON.stringify(productsData))
+
+      }
+      else{
+        return;
+      }
+
+      
     }
     //editfunction
     function editfunc(cetdid) {
